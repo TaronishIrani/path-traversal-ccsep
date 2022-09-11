@@ -18,4 +18,4 @@ Add the contents of the zip folder www into /var/www
 Add the contents of the zip folder apache2 into /etc/apache2, overwriting any exisiting files
 This installation is a newer version of the website using PHP instead of html
  
- I have just made a very basic website that takes an input, exploiting hasn't been implemented as of 05/09/2022.
+ PHP Exploitation is now working under http://localhost/pathtraversal/html/index.php?file=""

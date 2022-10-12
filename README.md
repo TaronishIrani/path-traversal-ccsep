@@ -1,21 +1,10 @@
 # path-traversal-ccsep
 Just a place to store our stuff
 
-IF you don't want to overwrite existing files:
-After installing apache on your system:
-
-  - Add the pathtraversal folder into /var/www
-  - Add pathtraversal.com.conf to /etc/apache2/sites-available
-  - Type a2ensite pathtraversal.com.conf into the terminal
-  - Type a2dissite 000-default.conf into the terminal
-  - Type systemctl restart apache2
-  - You should now be able to access the website
-  -
-===========================
-For a quicker installation
-===========================
-Add the contents of the zip folder www into /var/www
-Add the contents of the zip folder apache2 into /etc/apache2, overwriting any exisiting files
-This installation is a newer version of the website using PHP instead of html
- 
- PHP Exploitation is now working under http://localhost/pathtraversal/html/index.php?file=""
+- Download the pathtraversalDemo.zip for the final copy
+- After extracting, there should be two folders inside called attacker and victim.
+- To run the demo you must run "docker compose up" in both the attacker and victim folders.
+- I suggest having two seperate terminals open inside each folder.
+- To access the test website, use your host machine IP address followed by ":8000/index.php"
+- The final link should look like "http://xxx.xxx.xxx.xxx:8000/index.php"
+- From here you can test the demo, there is also a button to switch to the patched version for testing
